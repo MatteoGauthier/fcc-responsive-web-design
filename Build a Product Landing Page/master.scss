@@ -1,0 +1,140 @@
+body {
+  background-color: #0c0c0c;
+  color: white;
+  font-family: "Open Sans";
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+      position: sticky;
+    top: 0;
+}
+
+.galaxy {
+  display: flex;
+  align-items: baseline;
+  margin: 2rem;
+}
+
+#headers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+}
+
+.citation {
+  padding-right: 215px;
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+#subtext {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 2%;
+}
+
+.flexx {
+  display: flex;
+
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#samsung {
+  position: absolute;
+  transform: translate(-152px, -165px);
+  z-index: -1;
+}
+#firsttext {
+  font-family: Open Sans;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 50px;
+  color: #ffffff;
+  text-shadow: 4px 4px 0px #000000;
+}
+main {
+  margin: 0 auto;
+}
+.specs-item {
+  display: flex;
+  align-items: center;
+}
+.specs-icons {
+  margin-right: 13px;
+}
+tr,
+td {
+  padding: 10px 13px;
+  text-align: left;
+}
+tr td:first-child {
+  text-align: center;
+}
+table {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+}
+.newsletter {
+  position: fixed;
+  bottom: 40px;
+  left: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  span {
+    padding-left: 5px;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  input {
+    margin: 0 17px;
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: white;
+    height: 1.5rem;
+  }
+  img {
+    padding-right: 5px;
+  }
+}
+
+
+@media (max-width:1058px) {
+  #headers {
+    flex-direction: column;
+  }
+  .specs {
+    margin-top: 8rem;
+  }
+  footer {
+    margin-top: 3rem;
+  }
+  .newsletter {
+    position: relative;
+    width: 70%;;
+
+  }
+}

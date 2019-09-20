@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <link rel="stylesheet" href="master.css" />
+    </head>
+    <body>
+        <section class="section">
+            <div class="container">
+                <div class="columns ">
+                    <div class="column has-background-white notification is-two-thirds">
+                        <h1 class="title" id="title">Formulaire d'inscription</h1>
+                        <p id="description" class="subtitle ">Remplissez ci-dessous les champs pour vous inscrires à la beta du programme</p>
+                        <form id="survey-form" action="post">
+                            <div class="field">
+                                <label class="label">Nom</label>
+                                <div class="control">
+                                    <input id="name" class="input" required type="text" placeholder="Dupont" />
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label class="label" id="name-label">Prènom</label>
+                                <input class="input" type="text" placeholder="Robert" />
+                            </div>
+
+                            <div class="field">
+                                <label class="label" id="email-label">Votre adresse email</label>
+                                <input id="email" required class="input" type="email" placeholder="couscous@gmail.com" />
+                            </div>
+
+                            <div class="field">
+                                <label class="label">Pourquoi voulez vous participer à la beta ?</label>
+                                <div class="control">
+                                    <div class="select">
+                                        <select id="dropdown">
+                                            <option>Je suis curieux</option>
+                                            <option>Popur participer au développment du projet</option>
+                                            <option>J'ai envie de voir le projet en construction</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label" id="number-label">Votre âge</label>
+                                <input type="number" min="1" max="2" name="number" id="number" placeholder="2" required>
+                            </div>
+
+                            <div class="field">
+                                <label class="label">Message additionel</label>
+                                <div class="control">
+                                    <textarea class="textarea" placeholder="Textarea"></textarea>
+                                    <p class="help is-small">Si vous avez une demande en particulier, c'est ici</p>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <div class="control">
+                                    <label class="checkbox">
+                                        <input type="checkbox" value="d" />
+                                        I agree to the <a href="#">terms and conditions</a>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input type="checkbox" value="d" />
+                                        Subscribe to newsletter
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <div class="control">
+                                    <label class="radio">
+                                        <input type="radio" name="question" value="Yes"  />
+                                        Yes
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="question" value="No" checked/>
+                                        No
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="field is-grouped">
+                                <div class="control">
+                                    <button id="submit" type="submit" class="button is-link">Submit</button>
+                                </div>
+                                <div class="control">
+                                    <button class="button is-text">Cancel</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+</html>
